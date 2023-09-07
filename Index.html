@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="Styles.css" />
+    <title>Portfolio</title>
+  </head>
+  <body>
+    <main class="">
+      <article>
+        <h1 data-testid="Kalesanwo Olayinka">Kalesanwo Olayinka</h1>
+        <img
+          src="Mypic.jpg"
+          alt="Kalesanwo Olayinka"
+          data-testid="slackDisplayImage"
+        />
+
+        <p id="demo"></p>
+
+        <script data-testid="currentDayOfTheWeek">
+          const weekday = [
+            "Sunday",
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday",
+            "Saturday",
+          ];
+
+          const d = new Date();
+          let day = weekday[d.getDay()];
+          document.getElementById("demo").innerHTML = day;
+        </script>
+
+        <p id="utc"></p>
+
+        <script data-testid="currentUTCTime">
+          const u = new Date();
+          let ms = u.getUTCMilliseconds();
+          document.getElementById("utc").innerHTML = ms;
+        </script>
+
+        <p data-testid="myTrack">My Track is Frontend</p>
+
+        <a href=""  data-testid="githubURL">My Github link</a>
+      </article>
+    </main>
+  </body>
+</html>
